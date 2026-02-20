@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Barcelona Fan Page (HTML/CSS/JS)
 
 A simple multi-page fan website, upgraded with:
@@ -14,3 +15,7 @@ Open `index.html` in your browser.
 1. Push this folder to a GitHub repo
 2. Repo Settings → Pages → Deploy from branch → `main` / `(root)`
 
+=======
+# fan-page-website
+Responsive FC Barcelona fan page (Home, History, Players, Tickets)
+>>>>>>> 90121727e36bc7ee099ad077c21856285f4e248c
