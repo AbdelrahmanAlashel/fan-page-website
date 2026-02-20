@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barça Fan Page — Home</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/barcelonalogo-removebg-preview.png" alt="Barcelona logo">
+      <span>Barça Fan Page</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="History.html">History</a>
+      <a href="Squad.html">Players</a>
+      <a href="survey.html">Tickets</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeToggle" class="iconbtn" type="button" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+      <button id="menuToggle" class="iconbtn mobile-only" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav container" hidden>
+    <a href="index.html">Home</a>
+    <a href="History.html">History</a>
+    <a href="Squad.html">Players</a>
+    <a href="survey.html">Tickets</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero reveal">
+    <div class="hero-card">
+      <img class="hero-img" src="assets/images/Camp-Nou.jpg" alt="Camp Nou stadium">
+      <div class="hero-body">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span>Home</span>
+        <h1>Welcome to the Barcelona Fan Page</h1>
+        <p class="lead">Explore the club’s story, squad, and match tickets in a clean, modern layout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <h2>About the club</h2>
+        <p>Quick overview and identity.</p>
+      </div>
+      <span class="badge">La Liga • 1899</span>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Who we are</h3>
+        <p>
+          Football Club Barcelona (Barça) is a professional football club based in Barcelona, Catalonia, Spain,
+          competing in La Liga. Founded in 1899, the club is famously member-owned and operated by its supporters.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Barça Vision</h3>
+        <p>
+          Barça Vision groups initiatives around Web3, NFTs, and the metaverse, as part of FC Barcelona’s broader
+          digital strategy to connect with its global fan community.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <h2>Official channels</h2>
+        <p>Follow the club on their main platforms.</p>
+      </div>
+      <span class="badge">Social</span>
+    </div>
+
+    <div class="card">
+      <div class="social-row" aria-label="Social links">
+        <a href="https://www.instagram.com/fcbarcelona/" target="_blank" rel="noreferrer">
+          <img src="assets/images/Instagram_icon-removebg-preview.png" alt="">
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/fcbarcelona/" target="_blank" rel="noreferrer">
+          <img src="assets/images/Facebook_logo_(square).png" alt="">
+          Facebook
+        </a>
+        <a href="https://twitter.com/FCBarcelona" target="_blank" rel="noreferrer">
+          <img src="assets/images/Twitter_new_X_logo.png" alt="">
+          X
+        </a>
+        <a href="https://www.tiktok.com/@fcbarcelona?lang=en" target="_blank" rel="noreferrer">
+          <img src="assets/images/tik-tok-logo-E3F1A1B69E-seeklogo.com.png" alt="">
+          TikTok
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="footer-inner">
+      <div><strong>Barça Fan Page</strong></div>
+      <div class="small">© 2023</div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

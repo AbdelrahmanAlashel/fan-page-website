@@ -1,0 +1,26 @@
+[
+  {"name":"Robert Lewandowski","number":9,"nationality":"Poland","age":36,"position":"Forward"},
+  {"name":"Ferran Torres","number":7,"nationality":"Spain","age":24,"position":"Forward"},
+  {"name":"João Félix","number":14,"nationality":"Portugal","age":25,"position":"Forward"},
+  {"name":"Raphinha","number":11,"nationality":"Brazil","age":29,"position":"Forward"},
+  {"name":"Lamine Yamal","number":27,"nationality":"Spain","age":17,"position":"Forward"},
+
+  {"name":"Pedri","number":8,"nationality":"Spain","age":22,"position":"Midfielder"},
+  {"name":"İlkay Gündoğan","number":22,"nationality":"Germany","age":34,"position":"Midfielder"},
+  {"name":"Sergi Roberto","number":20,"nationality":"Spain","age":31,"position":"Midfielder"},
+  {"name":"Gavi","number":6,"nationality":"Spain","age":19,"position":"Midfielder"},
+  {"name":"Frenkie De Jong","number":21,"nationality":"Netherlands","age":26,"position":"Midfielder"},
+  {"name":"Oriol Romeu","number":18,"nationality":"Spain","age":32,"position":"Midfielder"},
+  {"name":"Abdelrahman Alashel","number":30,"nationality":"Jordan","age":21,"position":"Midfielder"},
+
+  {"name":"Andreas Christensen","number":15,"nationality":"Denmark","age":29,"position":"Defender"},
+  {"name":"Alejandro Balde","number":3,"nationality":"Spain","age":19,"position":"Defender"},
+  {"name":"Ronald Araújo","number":4,"nationality":"Uruguay","age":24,"position":"Defender"},
+  {"name":"João Cancelo","number":2,"nationality":"Portugal","age":28,"position":"Defender"},
+  {"name":"Jules Koundé","number":23,"nationality":"France","age":25,"position":"Defender"},
+  {"name":"Marcos Alonso","number":17,"nationality":"Spain","age":33,"position":"Defender"},
+
+  {"name":"Marc-André ter Stegen","number":1,"nationality":"Germany","age":31,"position":"Goalkeeper"},
+  {"name":"Iñaki Peña","number":13,"nationality":"Spain","age":24,"position":"Goalkeeper"},
+  {"name":"Ander Astralaga","number":26,"nationality":"Spain","age":20,"position":"Goalkeeper"}
+]

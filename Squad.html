@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barça Fan Page — Players</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/barcelonalogo-removebg-preview.png" alt="Barcelona logo">
+      <span>Barça Fan Page</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="History.html">History</a>
+      <a href="Squad.html">Players</a>
+      <a href="survey.html">Tickets</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeToggle" class="iconbtn" type="button" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+      <button id="menuToggle" class="iconbtn mobile-only" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav container" hidden>
+    <a href="index.html">Home</a>
+    <a href="History.html">History</a>
+    <a href="Squad.html">Players</a>
+    <a href="survey.html">Tickets</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero reveal">
+    <div class="hero-card">
+      <img class="hero-img" src="assets/images/01h2953t3ck6zbrep495.jpg" alt="Barcelona squad">
+      <div class="hero-body">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span>Players</span>
+        <h1>Squad</h1>
+        <p class="lead">Search, filter, and sort the current squad list.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <h2>Squad list</h2>
+        <p id="playersCount" class="small">Loading...</p>
+      </div>
+      <span class="badge">Players</span>
+    </div>
+
+    <div class="controls">
+      <input id="search" class="input" type="text" placeholder="Search name / nationality / number...">
+
+      <select id="sort" class="select">
+        <option value="name-asc">Name (A → Z)</option>
+        <option value="name-desc">Name (Z → A)</option>
+        <option value="age-asc">Age (low → high)</option>
+        <option value="age-desc">Age (high → low)</option>
+        <option value="number-asc">Number (low → high)</option>
+        <option value="number-desc">Number (high → low)</option>
+      </select>
+
+      <div class="chips" aria-label="Position filters">
+        <button class="chip active" type="button" data-pos="All">All</button>
+        <button class="chip" type="button" data-pos="Forward">Forwards</button>
+        <button class="chip" type="button" data-pos="Midfielder">Midfielders</button>
+        <button class="chip" type="button" data-pos="Defender">Defenders</button>
+        <button class="chip" type="button" data-pos="Goalkeeper">Goalkeepers</button>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+          <th>Nationality</th>
+          <th>Age</th>
+          <th>Position</th>
+        </tr>
+        </thead>
+        <tbody id="playersBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="footer-inner">
+      <div><strong>Barça Fan Page</strong></div>
+      <div class="small">© 2023</div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

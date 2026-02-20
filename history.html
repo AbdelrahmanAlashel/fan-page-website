@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barça Fan Page — History</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/barcelonalogo-removebg-preview.png" alt="Barcelona logo">
+      <span>Barça Fan Page</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="History.html">History</a>
+      <a href="Squad.html">Players</a>
+      <a href="survey.html">Tickets</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeToggle" class="iconbtn" type="button" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+      <button id="menuToggle" class="iconbtn mobile-only" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav container" hidden>
+    <a href="index.html">Home</a>
+    <a href="History.html">History</a>
+    <a href="Squad.html">Players</a>
+    <a href="survey.html">Tickets</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero reveal">
+    <div class="hero-card">
+      <img class="hero-img" src="assets/images/2021-08-08-DESPEDIDA-MESSI-49-min.jpg" alt="Barcelona history">
+      <div class="hero-body">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span>History</span>
+        <h1>Club history highlights</h1>
+        <p class="lead">A quick look at trophies and legendary scorers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <h2>Our trophies</h2>
+        <p>Major competitions and records.</p>
+      </div>
+      <span class="badge">Honours</span>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Major trophies</h3>
+        <ul>
+          <li>UEFA Champions League: 5</li>
+          <li>Spanish League Titles: 27</li>
+          <li>Copa Del Rey: 31</li>
+          <li>Club World Cup: 3</li>
+          <li>European Super Cup: 5</li>
+          <li>Spanish Super Cup: 14</li>
+          <li>Catalan Super Cup: 2</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>All-time top scorers</h3>
+        <ol>
+          <li>Lionel Messi: 778 Goals</li>
+          <li>César Rodríguez: 344 Goals</li>
+          <li>Luis Suárez: 283 Goals</li>
+          <li>László Kubala: 254 Goals</li>
+          <li>Samuel Eto'o: 199 Goals</li>
+          <li>Rivaldo: 235 Goals</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="footer-inner">
+      <div><strong>Barça Fan Page</strong></div>
+      <div class="small">© 2023</div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

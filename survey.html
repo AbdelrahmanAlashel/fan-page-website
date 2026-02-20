@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barça Fan Page — Tickets</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/images/barcelonalogo-removebg-preview.png" alt="Barcelona logo">
+      <span>Barça Fan Page</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="History.html">History</a>
+      <a href="Squad.html">Players</a>
+      <a href="survey.html">Tickets</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeToggle" class="iconbtn" type="button" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+      <button id="menuToggle" class="iconbtn mobile-only" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav container" hidden>
+    <a href="index.html">Home</a>
+    <a href="History.html">History</a>
+    <a href="Squad.html">Players</a>
+    <a href="survey.html">Tickets</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero reveal">
+    <div class="hero-card">
+      <img class="hero-img" src="assets/images/camp-nou-barcelona-c-fcbarcelona.avif" alt="Camp Nou stadium">
+      <div class="hero-body">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span>Tickets</span>
+        <h1>Request match tickets</h1>
+        <p class="lead">Choose a tier and send your request.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <h2>Ticket tiers</h2>
+        <p>Pick what fits your matchday experience.</p>
+      </div>
+      <span class="badge">Tiers</span>
+    </div>
+
+    <div class="pricing">
+      <div class="card price-card">
+        <div class="price-top">
+          <h3>Basic</h3>
+          <span class="pill">50 €</span>
+        </div>
+        <p>Standard seating with a great view of the match.</p>
+        <ul class="mini-list">
+          <li>Entry ticket</li>
+          <li>General seating</li>
+          <li>Fan zone access</li>
+        </ul>
+      </div>
+
+      <div class="card price-card">
+        <div class="price-top">
+          <h3>Premium</h3>
+          <span class="pill">75 €</span>
+        </div>
+        <p>Better seating area and more comfort.</p>
+        <ul class="mini-list">
+          <li>Entry ticket</li>
+          <li>Better seating</li>
+          <li>Faster entry line</li>
+        </ul>
+      </div>
+
+      <div class="card price-card">
+        <div class="price-top">
+          <h3>VIP</h3>
+          <span class="pill">100 €</span>
+        </div>
+        <p>Excellent seating and premium experience.</p>
+        <ul class="mini-list">
+          <li>Entry ticket</li>
+          <li>Premium seats</li>
+          <li>VIP gate access</li>
+        </ul>
+      </div>
+
+      <div class="card price-card">
+        <div class="price-top">
+          <h3>Hospitality</h3>
+          <span class="pill">200 €</span>
+        </div>
+        <p>Top experience with lounge-style comfort.</p>
+        <ul class="mini-list">
+          <li>Entry ticket</li>
+          <li>Hospitality area</li>
+          <li>Premium service</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head">
+      <div>
+        <h2>Ticket request</h2>
+        <p>Fill in your details below.</p>
+      </div>
+      <span class="badge">Request</span>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Details</h3>
+        <ul class="mini-list">
+          <li>Select match and tier</li>
+          <li>Choose quantity</li>
+          <li>Add any notes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Request form</h3>
+
+        <form id="ticketForm" data-demo-form>
+          <div class="form-grid">
+            <div class="row">
+              <label for="name">Full name *</label>
+              <input class="input" id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="row">
+              <label for="email">Email *</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="row">
+              <label for="phone">Phone</label>
+              <input class="input" id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+
+            <div class="row">
+              <label for="qty">Quantity *</label>
+              <select class="select" id="qty" name="qty" required>
+                <option value="">Select…</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <label for="match">Match *</label>
+            <select class="select" id="match" name="match" required>
+              <option value="">Select a match…</option>
+              <option>Barcelona vs Real Madrid — 22/02/2024</option>
+              <option>Barcelona vs Valencia — 27/02/2024</option>
+              <option>Barcelona vs Manchester United — 03/03/2024</option>
+              <option>Barcelona vs Arsenal — 09/03/2024</option>
+              <option>Barcelona vs Paris Saint Germain — 15/03/2024</option>
+            </select>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend>Category *</legend>
+
+            <label class="inline">
+              <input type="radio" name="category" value="Basic" required>
+              <span>Basic <span class="pill">50 €</span></span>
+            </label>
+
+            <label class="inline">
+              <input type="radio" name="category" value="Premium" required>
+              <span>Premium <span class="pill">75 €</span></span>
+            </label>
+
+            <label class="inline">
+              <input type="radio" name="category" value="VIP" required>
+              <span>VIP <span class="pill">100 €</span></span>
+            </label>
+
+            <label class="inline">
+              <input type="radio" name="category" value="Hospitality" required>
+              <span>Hospitality <span class="pill">200 €</span></span>
+            </label>
+          </fieldset>
+
+          <div class="row">
+            <label for="note">Note (optional)</label>
+            <textarea class="input" id="note" name="note" placeholder="Any preference or question…"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Submit</button>
+            <button class="btn" type="reset">Clear</button>
+          </div>
+
+          <div id="formMsg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer reveal">
+    <div class="footer-inner">
+      <div><strong>Barça Fan Page</strong></div>
+      <div class="small">© 2023</div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
